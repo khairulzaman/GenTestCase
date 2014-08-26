@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
-
+using System.Data.Entity.Migrations;
 
 namespace GenTestCase.Models
 {
@@ -13,5 +13,10 @@ namespace GenTestCase.Models
         public DbSet<Equipment> Equipments { get; set; }
         public DbSet<TestPhase> TestPhases { get; set; }
         public DbSet<TestCase> TestCases { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<GTCEntities, Configuration>());
+        }
     }
 }
