@@ -16,8 +16,7 @@ namespace GenTestCase.Controllers
 
         public ActionResult Index()
         {
-            var testCases = db.TestCases.ToList();
-
+            var testCases = db.TestCases.OrderBy(t => t.TestCaseId).ToList();
             return View(testCases);
         }
 

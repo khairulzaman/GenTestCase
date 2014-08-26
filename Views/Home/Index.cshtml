@@ -12,33 +12,14 @@
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.SubsystemId)
+            Test Cases
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EquipmentId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TestPhaseId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TestCaseId)
-        </th>
-        <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Subsystem.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Equipment.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TestPhase.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TestCaseId)
+            @Html.DisplayFor(modelItem => item.Number)
         </td>
         <td>
             @Html.ActionLink("Delete", "Delete", new { id=item.TestCaseId })

@@ -19,6 +19,12 @@ namespace GenTestCase.Models
         [DisplayName("TestPhase")]
         public int TestPhaseId { get; set; }
 
+        public string Number { 
+            get { 
+                return this.Subsystem.Name + "-" + this.Equipment.Name + "-" + this.TestPhase.Name + "-" + String.Format("{0:0000}", this.TestCaseId); 
+            } 
+        }
+
         public virtual Subsystem Subsystem { get; set; }
         public virtual Equipment Equipment { get; set; }
         public virtual TestPhase TestPhase { get; set; }

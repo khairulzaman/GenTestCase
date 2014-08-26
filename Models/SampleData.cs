@@ -58,6 +58,10 @@ namespace GenTestCase.Models
                 new TestCase { Subsystem = subsystems.Single(s => s.Name == "RAD"), Equipment = equipments.Single(e => e.Name == "TRIU"), TestPhase = phases.Single(p => p.Name == "IFAT")},
                 new TestCase { Subsystem = subsystems.Single(s => s.Name == "RAD"), Equipment = equipments.Single(e => e.Name == "TRIU"), TestPhase = phases.Single(p => p.Name == "IFAT")},
             }.ForEach(a => context.TestCases.Add(a));
+
+            equipments.ForEach(e => context.Equipments.Add(e));
+            subsystems.ForEach(s => context.Subsystems.Add(s));
+            phases.ForEach(p => context.TestPhases.Add(p));
         }
     }
 }

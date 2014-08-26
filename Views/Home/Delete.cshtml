@@ -1,0 +1,39 @@
+﻿@model GenTestCase.Models.TestCase
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>TestCase</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Subsystem.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Subsystem.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Equipment.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Equipment.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TestPhase.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TestPhase.Name)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
