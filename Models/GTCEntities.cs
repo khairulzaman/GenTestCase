@@ -9,6 +9,10 @@ namespace GenTestCase.Models
 {
     public class GTCEntities : DbContext
     {
+        public static string ConnectionStringName = "GTCEntities";
+
+        public GTCEntities() : base(ConnectionStringName) { }
+
         public DbSet<Subsystem> Subsystems { get; set; }
         public DbSet<Equipment> Equipments { get; set; }
         public DbSet<TestPhase> TestPhases { get; set; }
@@ -17,6 +21,7 @@ namespace GenTestCase.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<GTCEntities, Configuration>());
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
