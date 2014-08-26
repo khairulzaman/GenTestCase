@@ -131,9 +131,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Configuration.cs" />
+    <Compile Include="Models\Database\DatabaseInitializer.cs" />
     <Compile Include="Models\Equipment.cs" />
-    <Compile Include="Models\GTCEntities.cs" />
-    <Compile Include="Models\SampleData.cs" />
+    <Compile Include="Models\Database\DatabaseContext.cs" />
     <Compile Include="Models\Subsystem.cs" />
     <Compile Include="Models\TestCase.cs" />
     <Compile Include="Models\TestPhase.cs" />

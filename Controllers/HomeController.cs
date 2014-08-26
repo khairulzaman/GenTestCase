@@ -12,7 +12,7 @@ namespace GenTestCase.Controllers
         //
         // GET: /Home/
 
-        GTCEntities db = new GTCEntities();
+        DatabaseContext db = new DatabaseContext();
 
         public ActionResult Index()
         {

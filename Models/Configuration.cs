@@ -6,7 +6,7 @@ using System.Data.Entity.Migrations;
 
 namespace GenTestCase.Models
 {
-    public class Configuration  : DbMigrationsConfiguration<GTCEntities>
+    public class Configuration  : DbMigrationsConfiguration<DatabaseContext>
     {
         public Configuration()
         {

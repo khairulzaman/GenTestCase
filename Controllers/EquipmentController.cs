@@ -11,7 +11,7 @@ namespace GenTestCase.Controllers
 {
     public class EquipmentController : Controller
     {
-        private GTCEntities db = new GTCEntities();
+        private DatabaseContext db = new DatabaseContext();
 
         //
         // GET: /Equipment/

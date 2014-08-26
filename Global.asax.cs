@@ -16,10 +16,6 @@ namespace GenTestCase
     {
         protected void Application_Start()
         {
-
-            System.Data.Entity.Database.SetInitializer(
-                new GenTestCase.Models.SampleData());
-
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
