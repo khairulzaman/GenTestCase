@@ -25,6 +25,6 @@ c:\users\khairulzaman\documents\visual studio 2012\Projects\GenTestCase\GenTestC
 c:\users\khairulzaman\documents\visual studio 2012\Projects\GenTestCase\GenTestCase\bin\System.Web.WebPages.xml
 c:\users\khairulzaman\documents\visual studio 2012\Projects\GenTestCase\GenTestCase\bin\System.Web.WebPages.Deployment.xml
 c:\users\khairulzaman\documents\visual studio 2012\Projects\GenTestCase\GenTestCase\bin\System.Web.WebPages.Razor.xml
-c:\users\khairulzaman\documents\visual studio 2012\Projects\GenTestCase\GenTestCase\obj\Debug\GenTestCase.csprojResolveAssemblyReference.cache
 c:\users\khairulzaman\documents\visual studio 2012\Projects\GenTestCase\GenTestCase\obj\Debug\GenTestCase.dll
 c:\users\khairulzaman\documents\visual studio 2012\Projects\GenTestCase\GenTestCase\obj\Debug\GenTestCase.pdb
+c:\users\khairulzaman\documents\visual studio 2012\Projects\GenTestCase\GenTestCase\obj\Debug\GenTestCase.csprojResolveAssemblyReference.cache

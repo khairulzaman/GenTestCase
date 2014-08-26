@@ -123,7 +123,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EquipmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SubsystemController.cs" />
+    <Compile Include="Controllers\TestPhaseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -224,6 +227,21 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\Home\Delete.cshtml" />
+    <Content Include="Views\Subsystem\Index.cshtml" />
+    <Content Include="Views\Subsystem\Details.cshtml" />
+    <Content Include="Views\Subsystem\Create.cshtml" />
+    <Content Include="Views\Subsystem\Edit.cshtml" />
+    <Content Include="Views\Subsystem\Delete.cshtml" />
+    <Content Include="Views\Equipment\Index.cshtml" />
+    <Content Include="Views\Equipment\Details.cshtml" />
+    <Content Include="Views\Equipment\Create.cshtml" />
+    <Content Include="Views\Equipment\Edit.cshtml" />
+    <Content Include="Views\Equipment\Delete.cshtml" />
+    <Content Include="Views\TestPhase\Index.cshtml" />
+    <Content Include="Views\TestPhase\Details.cshtml" />
+    <Content Include="Views\TestPhase\Create.cshtml" />
+    <Content Include="Views\TestPhase\Edit.cshtml" />
+    <Content Include="Views\TestPhase\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
