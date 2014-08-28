@@ -53,8 +53,6 @@ namespace GenTestCase.Models
         {
             #if DEBUG
             Database.SetInitializer<DatabaseContext>(new DropCreateAlwaysInitializer());
-            #else
-            Database.SetInitializer<DatabaseContext>(new CreateInitializer());
             #endif
         }
     }
